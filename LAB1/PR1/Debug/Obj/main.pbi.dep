@@ -1,0 +1,29 @@
+main.pbi: C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\main.cpp \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers\STM32F411\rccregisters.hpp \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers\STM32F411\FieldValues\rccfieldvalues.hpp \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers\fieldvalue.hpp \
+  D:\IAR\arm\inc\cpp\cstddef D:\IAR\arm\inc\c\stddef.h \
+  D:\IAR\arm\inc\c\ycheck.h D:\IAR\arm\inc\c\yvals.h \
+  D:\IAR\arm\inc\c\DLib_Defaults.h \
+  D:\\IAR\\arm\\inc\\c\\DLib_Config_Normal.h \
+  D:\IAR\arm\inc\c\DLib_Product.h D:\IAR\arm\inc\c\ysizet.h \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers/fieldvaluebase.hpp \
+  D:\IAR\arm\inc\cpp\type_traits D:\IAR\arm\inc\cpp\xstddef \
+  D:\IAR\arm\inc\cpp\cstdlib D:\IAR\arm\inc\c\stdlib.h \
+  D:\IAR\arm\inc\c\DLib_Product_stdlib.h \
+  D:\IAR\arm\inc\cpp\initializer_list D:\IAR\arm\inc\cpp\xtr1common \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers/accessmode.hpp \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Common\susudefs.hpp \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers/registerfield.hpp \
+  D:\IAR\arm\inc\cpp\cassert D:\IAR\arm\inc\c\assert.h \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Atomic\atomicutils.hpp \
+  D:\IAR\arm\inc\cpp\cstdint D:\IAR\arm\inc\c\stdint.h \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers\registerbase.hpp \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers/registertype.hpp \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers\register.hpp \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers/fieldvalue.hpp \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers\accessmode.hpp \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers\STM32F411\gpioaregisters.hpp \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers\STM32F411\FieldValues\gpioafieldvalues.hpp \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers\STM32F411\gpiocregisters.hpp \
+  C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Abstract_Hardware\Registers\STM32F411\FieldValues\gpiocfieldvalues.hpp
