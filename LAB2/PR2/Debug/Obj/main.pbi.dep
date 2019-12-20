@@ -1,0 +1,36 @@
+main.pbi: C:\Users\User\Desktop\POIP\POIP\LABeror2\PR2\main.cpp \
+  D:\IAR\arm\inc\cpp\cstdint D:\IAR\arm\inc\c\stdint.h \
+  D:\IAR\arm\inc\c\ycheck.h D:\IAR\arm\inc\c\yvals.h \
+  D:\IAR\arm\inc\c\DLib_Defaults.h \
+  D:\\IAR\\arm\\inc\\c\\DLib_Config_Normal.h \
+  D:\IAR\arm\inc\c\DLib_Product.h D:\IAR\arm\inc\cpp\cstddef \
+  D:\IAR\arm\inc\c\stddef.h D:\IAR\arm\inc\c\ysizet.h \
+  D:\IAR\arm\inc\cpp\iostream D:\IAR\arm\inc\cpp\istream \
+  D:\IAR\arm\inc\cpp\ostream D:\IAR\arm\inc\cpp\ios \
+  D:\IAR\arm\inc\cpp\xlocnum D:\IAR\arm\inc\cpp\climits \
+  D:\IAR\arm\inc\c\limits.h D:\IAR\arm\inc\cpp\cmath \
+  D:\IAR\arm\inc\c\math.h D:\IAR\arm\inc\c\DLib_float_setup.h \
+  D:\IAR\arm\inc\c\xtgmath.h D:\IAR\arm\inc\cpp\xtr1common \
+  D:\IAR\arm\inc\cpp\cstdlib D:\IAR\arm\inc\c\stdlib.h \
+  D:\IAR\arm\inc\c\DLib_Product_stdlib.h D:\IAR\arm\inc\cpp\streambuf \
+  D:\IAR\arm\inc\cpp\xiosbase D:\IAR\arm\inc\cpp\xlocale \
+  D:\IAR\arm\inc\cpp\cstring D:\IAR\arm\inc\c\string.h \
+  D:\IAR\arm\inc\c\DLib_Product_string.h D:\IAR\arm\inc\cpp\clocale \
+  D:\IAR\arm\inc\c\locale.h D:\IAR\arm\inc\c\xctype.h \
+  D:\IAR\arm\inc\c\xlocale_lconv.h D:\IAR\arm\inc\cpp\cwctype \
+  D:\IAR\arm\inc\c\wctype.h D:\IAR\arm\inc\cpp\stdexcept \
+  D:\IAR\arm\inc\cpp\exception D:\IAR\arm\inc\cpp\xstddef \
+  D:\IAR\arm\inc\cpp\initializer_list D:\IAR\arm\inc\cpp\xxexception \
+  D:\IAR\arm\inc\cpp\type_traits D:\IAR\arm\inc\cpp\xstring \
+  D:\IAR\arm\inc\cpp\xmemory0 D:\IAR\arm\inc\cpp\limits \
+  D:\IAR\arm\inc\cpp\cfloat D:\IAR\arm\inc\c\float.h \
+  D:\IAR\arm\inc\cpp\cwchar D:\IAR\arm\inc\c\wchar.h \
+  D:\IAR\arm\inc\cpp\new D:\IAR\arm\inc\cpp\xutility \
+  D:\IAR\arm\inc\cpp\utility D:\IAR\arm\inc\cpp\iosfwd \
+  D:\IAR\arm\inc\cpp\cstdio D:\IAR\arm\inc\c\stdio.h \
+  D:\IAR\arm\inc\c\xatomic.h D:\IAR\arm\inc\cpp\typeinfo \
+  D:\IAR\arm\inc\cpp\xlocinfo D:\IAR\arm\inc\cpp\cctype \
+  D:\IAR\arm\inc\c\ctype.h D:\IAR\arm\inc\cpp\ctime \
+  D:\IAR\arm\inc\c\time.h D:\IAR\arm\inc\c/time32.h \
+  D:\IAR\arm\inc\cpp\system_error D:\IAR\arm\inc\cpp\cerrno \
+  D:\IAR\arm\inc\c\errno.h

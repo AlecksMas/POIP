@@ -1,0 +1,221 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  20/Dec/2019  20:31:27
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\User\Desktop\POIP\POIP\LABeror2\PR2\Debug\Exe\PR.out
+#    Map file     =
+#        C:\Users\User\Desktop\POIP\POIP\LABeror2\PR2\Debug\List\PR.map
+#    Command line =
+#        -f C:\Users\User\AppData\Local\Temp\EW205A.tmp
+#        (C:\Users\User\Desktop\POIP\POIP\LABeror2\PR2\Debug\Obj\main.o
+#        C:\Users\User\Desktop\POIP\POIP\LABeror2\PR2\Debug\Obj\startup.o
+#        --no_out_extension -o
+#        C:\Users\User\Desktop\POIP\POIP\LABeror2\PR2\Debug\Exe\PR.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map C:\Users\User\Desktop\POIP\POIP\LABeror2\PR2\Debug\List\PR.map
+#        --config D:\IAR\arm\config\linker\ST\stm32f411xE.icf --semihosting
+#        --entry __iar_program_start --vfe --enable_stack_usage --text_out
+#        locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** MESSAGES
+***
+
+Warning[Ls015]: [stack usage analysis] at least one function appears to be
+          uncalled. Example: "InterruptHandler::DummyHandler()". A complete
+          list of uncalled functions is in the map file.
+
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor        = *
+__CPP_Exceptions = Disabled
+__CPP_Language   = C++14
+__Heap_Handler   = Basic
+__SystemLibrary  = DLib
+__dlib_version   = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x807'ffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2001'ffff] {
+          rw, block CSTACK, block HEAP };
+
+No sections matched the following patterns:
+
+  rw  in "P2"
+
+
+  Section   Kind         Address    Size  Object
+  -------   ----         -------    ----  ------
+"A0":                               0xbc
+  .intvec   const     0x800'0000    0xbc  startup.o [1]
+                    - 0x800'00bc    0xbc
+
+"P1":                               0x6d
+  .text     ro code   0x800'00bc    0x1e  cmain.o [4]
+  .text     ro code   0x800'00da     0x4  low_level_init.o [2]
+  .text     ro code   0x800'00de     0x2  startup.o [1]
+  .text     ro code   0x800'00e0    0x14  main.o [1]
+  .text     ro code   0x800'00f4     0x4  exit.o [2]
+  .text     ro code   0x800'00f8     0xa  cexit.o [4]
+  .text     ro code   0x800'0102     0x2  startup.o [1]
+  .text     ro code   0x800'0104    0x14  exit.o [5]
+  .text     ro code   0x800'0118    0x10  startup.o [1]
+  .rodata   const     0x800'0128     0x1  unwind_debug.o [5]
+                    - 0x800'0129    0x6d
+
+"P2":                             0x2000
+  CSTACK             0x2000'0000  0x2000  <Block>
+    CSTACK  uninit   0x2000'0000  0x2000  <Block tail>
+                   - 0x2000'2000  0x2000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'0129   0x807'ffff  0x7'fed7
+  0x2000'2000  0x2001'ffff  0x1'e000
+
+
+*******************************************************************************
+*** STACK USAGE
+***
+
+  Call Graph Root Category  Max Use  Total Use
+  ------------------------  -------  ---------
+  Program entry                 16         16
+  Uncalled function              0          0
+
+
+Program entry
+  "__iar_program_start": 0x800'0119
+
+  Maximum call chain                               16  bytes
+
+    "__iar_program_start"                           8
+    "__cmain"                                       0
+    "exit"                                          0
+    "_exit"                                         0
+    "__exit"                                        8
+
+Uncalled function
+  "InterruptHandler::DummyHandler()": 0x800'00df
+
+  Maximum call chain                                0  bytes
+
+    "InterruptHandler::DummyHandler()"              0
+
+Uncalled function
+  "InterruptHandler::Timer2Handler()": 0x800'0103
+
+  Maximum call chain                                0  bytes
+
+    "InterruptHandler::Timer2Handler()"             0
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+command line/config:
+    -------------------------------------------
+    Total:
+
+C:\Users\User\Desktop\POIP\POIP\LABeror2\PR2\Debug\Obj: [1]
+    main.o                 20
+    startup.o              20      188
+    -------------------------------------------
+    Total:                 40      188
+
+dl7M_tln.a: [2]
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                  8
+
+dlpp7M_tl_nc.a: [3]
+    -------------------------------------------
+    Total:
+
+rt7M_tl.a: [4]
+    cexit.o                10
+    cmain.o                30
+    -------------------------------------------
+    Total:                 40
+
+shb_l.a: [5]
+    exit.o                 20
+    unwind_debug.o                   1
+    -------------------------------------------
+    Total:                 20        1
+
+    Linker created                        8'192
+-----------------------------------------------
+    Grand Total:          108      189    8'192
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+?main                    0x800'00bd        Code  Gb  cmain.o [4]
+CSTACK$$Base            0x2000'0000         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'2000         --   Gb  - Linker created -
+InterruptHandler::DummyHandler()
+                         0x800'00df   0x2  Code  Gb  startup.o [1]
+InterruptHandler::Timer2Handler()
+                         0x800'0103   0x2  Code  Gb  startup.o [1]
+Region$$Table$$Base             0x0         --   Gb  - Linker created -
+Region$$Table$$Limit            0x0         --   Gb  - Linker created -
+__cmain                  0x800'00bd        Code  Gb  cmain.o [4]
+__exit                   0x800'0105  0x14  Code  Gb  exit.o [5]
+__iar_debug_exceptions   0x800'0128   0x1  Data  Gb  unwind_debug.o [5]
+__iar_program_start      0x800'0119  0x10  Code  Gb  startup.o [1]
+__low_level_init         0x800'00db   0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000  0xbc  Data  Lc  startup.o [1]
+_call_main               0x800'00c9        Code  Gb  cmain.o [4]
+_exit                    0x800'00f9        Code  Gb  cexit.o [4]
+_main                    0x800'00d7        Code  Gb  cmain.o [4]
+exit                     0x800'00f5   0x4  Code  Gb  exit.o [2]
+main                     0x800'00e1  0x14  Code  Gb  main.o [1]
+
+
+[1] = C:\Users\User\Desktop\POIP\POIP\LABeror2\PR2\Debug\Obj
+[2] = dl7M_tln.a
+[3] = dlpp7M_tl_nc.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+    108 bytes of readonly  code memory
+    189 bytes of readonly  data memory
+  8'192 bytes of readwrite data memory
+
+Errors: none
+Warnings: 1
