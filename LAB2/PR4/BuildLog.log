@@ -1,0 +1,32 @@
+
+Live logging to 'C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\BuildLog.log' enabled.
+
+Live logging to 'C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\BuildLog.log' enabled.
+Building configuration: PR - Debug
+Updating build tree...
+
+main.cpp 
+iccarm.exe C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\main.cpp -o C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Debug\Obj --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config D:\IAR\arm\inc\c\DLib_Config_Normal.h -I C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\AbstractHardware\ -I C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\AbstractHardware\Registers\ -I C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\AbstractHardware\Registers\STM32F411\ -I C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\AbstractHardware\Registers\STM32F411\FieldValues\ -I C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Application\ -I C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Common\ -I C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\FreeRtos\ -Ol --c++ --no_exceptions --no_rtti
+
+   IAR ANSI C/C++ Compiler V8.40.1.212/W32 for ARM
+   Copyright 1999-2019 IAR Systems AB.
+   PC-locked license - IAR Embedded Workbench for ARM
+C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\AbstractHardware\Registers\registerfield.hpp(8) : Fatal Error[Pe1696]: cannot open source file "atomicutils.hpp"
+            searched: "C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\AbstractHardware\"
+            searched: "C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\AbstractHardware\Registers\"
+            searched: "C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\AbstractHardware\Registers\STM32F411\"
+            searched: "C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\AbstractHardware\Registers\STM32F411\FieldValues\"
+            searched: "C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Application\"
+            searched: "C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\Common\"
+            searched: "C:\Users\User\Desktop\POIP\POIP\LAB1\PR1\FreeRtos\"
+            searched: "D:\IAR\arm\inc\"
+            searched: "D:\IAR\arm\inc\c\"
+            searched: "D:\IAR\arm\inc\cpp\"
+            current directory: "C:\Users\User\Desktop\POIP\POIP\LAB1\PR1"
+
+Errors: 1
+Warnings: none
+Error while running C/C++ Compiler
+
+Total number of errors: 1
+Total number of warnings: 0
