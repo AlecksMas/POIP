@@ -28,35 +28,50 @@ extern "C"
   }
 }
 
+struct Button
+{
+  static bool IsPressed()
+  {
+    bool result = false;
+    if (GPIOC::IDR::IDR13::Low::IsSet() )
+    {
+      while (GPIOC::IDR::IDR13::Low::IsSet() )
+      {
+        result = true;
+      };
+    }
+    return result;
+  }
+};
+template <typename Port, std::uint32_t pinNum> struct Led {
+
+  static void Toggle()
+  {
+    Port::ODR::Toggle(1<<pinNum);
+  }
+};
+using Led1 = Led<GPIOC,5>;
+
+using Led2 = Led<GPIOC,8>;
+
+using Led3 = Led<GPIOC,9>;
+
+using Led4 = Led<GPIOA,5>;
+
 int main()
-{
-bool flag = false;
-for (; ;)
+
 {
 
-if(GPIOC::IDR::IDR13::Low::IsSet()) //kn vkl
-{
-while(GPIOC::IDR::IDR13::Low::IsSet())
-{
-} ;
+  for (; ;)
+  {
+    if (Button::IsPressed())
+    {
+      Led1::Toggle ();
+      Led2::Toggle ();
+      Led3::Toggle ();
+      Led4::Toggle ();
+    }
+  }
+  return 0;
+}
 
-if(flag)
-{
-GPIOA::ODR::ODR5::High::Set ();
-GPIOC::ODR::ODR5::High::Set ();
-GPIOC::ODR::ODR8::High::Set ();
-GPIOC::ODR::ODR9::High::Set ();
-flag = false ;
-}
-else
-{
-GPIOA::ODR::ODR5::Low::Set ();
-GPIOC::ODR::ODR5::Low::Set ();
-GPIOC::ODR::ODR8::Low::Set ();
-GPIOC::ODR::ODR9::Low::Set ();
-flag = true ;
-}
-}
-}
-return 0;
-}
