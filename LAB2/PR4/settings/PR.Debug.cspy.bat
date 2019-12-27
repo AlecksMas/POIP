@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\IAR\common\bin\cspybat" -f "C:\Users\User\Desktop\POIP\POIP\LABeror2\PR4\settings\PR.Debug.general.xcl" --backend -f "C:\Users\User\Desktop\POIP\POIP\LABeror2\PR4\settings\PR.Debug.driver.xcl" 
+"D:\IAR\common\bin\cspybat" -f "C:\Users\User\Desktop\POIP\POIP\LAB2\PR4\settings\PR.Debug.general.xcl" --backend -f "C:\Users\User\Desktop\POIP\POIP\LAB2\PR4\settings\PR.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\IAR\common\bin\cspybat" -f "C:\Users\User\Desktop\POIP\POIP\LABeror2\PR4\settings\PR.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\User\Desktop\POIP\POIP\LABeror2\PR4\settings\PR.Debug.driver.xcl" 
+"D:\IAR\common\bin\cspybat" -f "C:\Users\User\Desktop\POIP\POIP\LAB2\PR4\settings\PR.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\User\Desktop\POIP\POIP\LAB2\PR4\settings\PR.Debug.driver.xcl" 
 
 @echo off 
 :end

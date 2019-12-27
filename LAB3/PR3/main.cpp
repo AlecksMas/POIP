@@ -24,8 +24,7 @@ extern "C"
     GPIOC::MODER::MODER5::Output::Set();
     GPIOC::MODER::MODER8::Output::Set();
     GPIOC::MODER::MODER9::Output::Set();
-    GPIOC::MODER::MODER13::Input::Set();
-    
+
     RCC::APB1ENR::TIM2EN::Enable::Set();
     TIM2::CR1::URS::OverFlow::Set();
     return 0;
